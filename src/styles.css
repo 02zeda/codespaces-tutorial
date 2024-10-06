@@ -4,7 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
-html,
+html{
+  scroll-behavior: smooth;
+}
+/* add a smooth scroll*/
 body {
   font-family: "Montserrat", sans-serif;
   height: 100%;
@@ -13,6 +16,7 @@ body {
   padding: 0;
   width: 100%;
 }
+
 
 div#main {
   display: flex;
@@ -122,4 +126,15 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
